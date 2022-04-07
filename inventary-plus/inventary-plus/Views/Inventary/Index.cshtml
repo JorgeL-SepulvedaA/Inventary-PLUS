@@ -12,17 +12,13 @@
 
 <body class="bg-info">
     <div class="col-12 col-md-9 col-lg-7 col-xl-6 m-auto w-100 pt-4">
-        <form id="form" class="bg-white my-auto" style="border-radius: 15px">
+        <form id="form" class="bg-white my-auto" style="border-radius: 20px">
             <div class="mt-4 mb-4">
                 <h1 class="font-weight-bold text-center">Sign Up</h1>
             </div>
             <div class="mt-4 mb-4 ml-4 mr-4 pt-4">
-                <label class="font-weight-bold" for="first-name">First Name</label>
-                <input type="text" name="first" id="first-name" placeholder="Nombre" class="form-control form-control-lg rounded" />
-            </div>
-            <div class="mt-4 mb-4 ml-4 mr-4">
-                <label class="font-weight-bold" for="last-name">Last Name</label>
-                <input type="text" name="last" id="last-name" placeholder="Apellido" class="form-control form-control-lg rounded" />
+                <label class="font-weight-bold" for="first-name">Usuario</label>
+                <input type="text" name="user" id="userName" placeholder="Tu usuario" class="form-control form-control-lg rounded" />
             </div>
             <div class="mb-4 ml-4 mr-4">
                 <label class="font-weight-bold" for="email">Email</label>
@@ -58,16 +54,16 @@
     function dataValidation(e) {
         e.preventDefault();
 
-        let userFirstName = document.querySelector('#first-name').value;
-        let userLastName = document.querySelector('#last-name').value;
+        let userName = document.querySelector('#userName').value;
         let userEmail = document.querySelector('#email').value;
         let userPassword = document.querySelector('#password').value;
 
-        if (userFirstName == '' || userLastName == '' || userEmail == '' || userPassword == '') {
+        if (userName == '' ||  userEmail == '' || userPassword == '') {
             showAlert('All fields are required', 'error');
 
             return;
         }
+
 
         showAlert('All the fields were fulfilled');
 
