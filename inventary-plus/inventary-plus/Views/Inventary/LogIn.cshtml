@@ -11,7 +11,7 @@
 <link rel="stylesheet" href="" />
 
 <body class="bg-info">
-    <div class="col-12 col-md-9 col-lg-7 col-xl-6 m-auto pt-5">
+    <div class="col-12 col-md-9 col-lg-7 col-xl-6 m-auto pt-5 mt-lg-5">
         <form id="form" class="bg-white mt-5" style="border-radius: 20px">
             <div class="mt-4 mb-4">
                 <h1 class="font-weight-bold text-center">Log In</h1>
@@ -36,51 +36,7 @@
             <p class="text-center pb-2"><a asp-action="#" asp-controller="Inventary">Forgot your password?</a></p>
         </form>
     </div>
+
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="~/js/login.js" type="module"></script>
 </body>
-
-<script>
-    let form = document.querySelector('#form');
-    let alertField = document.querySelector('.alert-field');
-
-    document.addEventListener('DOMContentLoaded', () => {
-        form.addEventListener('submit', dataValidation);
-    });
-
-    function dataValidation(e) {
-        e.preventDefault();
-
-        let userEmail = document.querySelector('#email').value;
-        let userPassword = document.querySelector('#password').value;
-
-        if (userEmail == '' || userPassword == '') {
-            showAlert('All fields are required', 'error');
-
-            return;
-        }
-
-        showAlert('All the fields were fulfilled');
-    }
-
-    function showAlert(message, type) {
-        let existingAlert = document.querySelector('.alerta');
-
-        if (!existingAlert) {
-            let alert = document.createElement('p');
-            alert.classList.add('text-center', 'alert', 'font-weight-bold', 'd-block', 'm-auto', 'mb-2', 'alerta');
-
-            if (type == 'error') {
-                alert.classList.add('alert-danger');
-            } else {
-                alert.classList.add('alert-success');
-            }
-
-            alert.textContent = message;
-
-            alertField.appendChild(alert);
-
-            setTimeout(() => {
-                alert.remove();
-            }, 3000);
-        }
-    }
-</script>
