@@ -6,6 +6,9 @@ The app is MVC-based, which means that the app allows you to surf between a coup
 
     1. Adjust your configuration management.
 
+# Database mapping 
+
+
 # Group 7
 we are in charge of the inventary-app's development, every each one of us taking care of a particular task in the project. We are:
 
