@@ -17,5 +17,10 @@ namespace Inventary_App.Controllers
         {
             return View();
         }
+
+        public IActionResult ForgotPassword()
+        {
+            return View();
+        }
     }
 }
