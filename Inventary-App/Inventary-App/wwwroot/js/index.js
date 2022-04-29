@@ -1,5 +1,4 @@
 ﻿let form = document.querySelector('#form');
-let alertField = document.querySelector('.alert-field');
 
 document.addEventListener('DOMContentLoaded', () => {
     form.addEventListener('submit', dataValidation);
