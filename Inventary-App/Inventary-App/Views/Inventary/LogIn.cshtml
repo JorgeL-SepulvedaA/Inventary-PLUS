@@ -1,0 +1,42 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+
+
+@{
+    ViewData["Title"] = "Log In";
+}
+<link rel="stylesheet" href="" />
+
+<body class="bg-info">
+    <div class="col-12 col-md-9 col-lg-7 col-xl-6 m-auto pt-5 mt-lg-5">
+        <form id="form" class="bg-white mt-5" style="border-radius: 20px">
+            <div class="mt-4 mb-4">
+                <h1 class="font-weight-bold text-center display-4">Log In</h1>
+            </div>
+            <div class="mb-4 ml-4 mr-4">
+                <h5 class="font-weight-bold" for="email">Email</h5>
+                <input type="email" name="email" id="email" placeholder="Your@email.com" class="form-control form-control-lg rounded" />
+            </div>
+            <div class="mb-5 ml-4 mr-4">
+                <h5 class="font-weight-bold" for="password">Contraseña</h5>
+                <input type="password" name="password" id="password" placeholder="Tu contraseña" class="form-control form-control-lg rounded" />
+            </div>
+            <div class="ml-4 mr-4 pb-2 pb-4">
+                <input type="submit" value="Submit" class="btn btn-primary btn-block btn-lg gradient-custom-4 font-weight-bold text-white rounded-pill" />
+            </div>
+            <div class="alert-field mb-2">
+
+            </div>
+            <div class="pb-1">
+                <p class="text-center pb-1 text-muted">Don't have an account? <a asp-action="Index" asp-controller="Inventary">Sign Up</a></p>
+            </div>
+            <p class="text-center pb-2"><a asp-action="#" asp-controller="Inventary">Forgot your password?</a></p>
+        </form>
+    </div>
+
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="~/js/login.js" type="module"></script>
+</body>
