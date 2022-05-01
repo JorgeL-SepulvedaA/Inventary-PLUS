@@ -55,11 +55,14 @@ The app is MVC-based, which means that the app allows you to surf between a coup
 
             - SecurityQuestions - table name
                 Its fields are:
+                Attempt | #1 | #2 | #3 | #4 | #5 | #6 | #7 | #8 | #9 | #10 | #11
+                --- | --- | --- | --- |--- |--- |--- |--- |--- |--- |--- |---
+                Seconds | 301 | 283 | 290 | 286 | 289 | 285 | 287 | 287 | 272 | 276 | 269
              IdQuestionSecurity             DescriptionQuestion
-                1-                              What is your first pet's name?
-                2-                              where you were born?
-                3-                              What is your mother's name?
-                4-                              What your favorite color?
+                1-                        What is your first pet's name?
+                2-                        Where you were born?
+                3-                        What is your mother's name?
+                4-                        What your favorite color?
 # Group 7
 we are in charge of the inventary-app's development, every each one of us taking care of a particular task in the project. We are:
 
