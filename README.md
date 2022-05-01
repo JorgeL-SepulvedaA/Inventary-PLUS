@@ -53,13 +53,13 @@ The app is MVC-based, which means that the app allows you to surf between a coup
 
                 IdTypeTransaction | TransactionType:
                 ------------------|-----------------
-                    1 -             | Input
+                    1 -           | Input
                 ------------------|-----------------
-                    2 -             | Output
+                    2 -           | Output
                 ------------------|-----------------
-                    3 -             | Transfer
+                    3 -           | Transfer
                 ------------------|-----------------
-                    4 -             | Adjust
+                    4 -           | Adjust
 
             - SecurityQuestions - table name
                 Its fields are:
