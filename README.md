@@ -1,12 +1,15 @@
 # Inventary-PLUS
+
 Nowadays, there's a lot of programs helping companies in inventary tasks, such as having a good inventary-processing management. And so, due to the urge to be aware with all these technologies, we've created a inventary system that will solve all your inventary-stuff in just one place... Here we introduce you to the greatest app, called: ɪɴᴠᴇɴᴛᴀʀʏ-ᴘʟᴜꜱ.
 
 # How to use
+
 The app is MVC-based, which means that the app allows you to surf between a couples of modules to make your stancy more confortable doing all your work in the same places interacting with all the funcionalities. To understand how this work, here is a intruction for you to follow step by step to start working. (Still in process)
 
     1. Adjust your configuration management.
 
-# Database mapping 
+# Database mapping
+
     The structure of the database:
         The login - is linked to the Users table.
         The users table contains the fields:
@@ -47,23 +50,32 @@ The app is MVC-based, which means that the app allows you to surf between a coup
         Static tables:
             - Transaction type - table name
                 Its fields are:
-              IdType Transaction             TransactionType:
-                1 -                             Input
-                2 -                             Output
-                3 -                             Transfer
-                4 -                             Adjust
+
+                IdTypeTransaction | TransactionType:
+                ------------------|-----------------
+                    1 -             | Input
+                ------------------|-----------------
+                    2 -             | Output
+                ------------------|-----------------
+                    3 -             | Transfer
+                ------------------|-----------------
+                    4 -             | Adjust
 
             - SecurityQuestions - table name
                 Its fields are:
-# [Attempt | #1 | #2 | #3 | #4 | #5 | #6 | #7 | #8 | #9 | #10 | #11]
-# [--- | --- | --- | --- |--- |--- |--- |--- |--- |--- |--- |---]
-# [Seconds | 301 | 283 | 290 | 286 | 289 | 285 | 287 | 287 | 272 | 276 | 269]
-             IdQuestionSecurity             DescriptionQuestion
-                1-                        What is your first pet's name?
-                2-                        Where you were born?
-                3-                        What is your mother's name?
-                4-                        What your favorite color?
+
+                IdQuestionSecurity | DescriptionQuestion
+                -------------------|-------------------------------
+                    1-             | What is your first pet's name?
+                -------------------|-------------------------------
+                    2-             | Where you were born?
+                -------------------|-------------------------------
+                    3-             | What is your mother's name?
+                -------------------|-------------------------------
+                    4-             | What your favorite color?
+
 # Group 7
+
 we are in charge of the inventary-app's development, every each one of us taking care of a particular task in the project. We are:
 
     1. Jaime David Terrero Félix  - 202010619
