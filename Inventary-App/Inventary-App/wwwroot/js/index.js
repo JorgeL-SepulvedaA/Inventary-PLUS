@@ -13,10 +13,7 @@ function dataValidation(e) {
 
     if (userName == '' || userEmail == '' || userPassword == '') {
         swal("Error!", "Todos los campos son obligatorios", "error");
-
         return;
     }
-
-
     swal("Bien hecho", "Usuario creado!", "success");
 }

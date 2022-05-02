@@ -6,7 +6,7 @@ Nowadays, there's a lot of programs helping companies in inventary tasks, such a
 
 The app is MVC-based, which means that the app allows you to surf between a couples of modules to make your stancy more confortable doing all your work in the same places interacting with all the funcionalities. To understand how this work, here is a intruction for you to follow step by step to start working. (Still in process)
 
-    1. Adjust your configuration management.
+    1. Access to this link: [https://inventary-app.azurewebsites.net/].
 
 # Database mapping
 
