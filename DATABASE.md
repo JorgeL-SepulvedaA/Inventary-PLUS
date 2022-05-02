@@ -1,5 +1,6 @@
 # STORE PROCEDURES
 
+<<<<<<< HEAD
 # ALMACEN
 
 - Tabla [createAlmacen]
@@ -8,8 +9,17 @@ begin
 	insert into Almacen(Descripcion, Estado)
 	values(@Descripcion, @Estado)
 end]
+=======
+- Tabla [NOMBRE DE LA TABLA]
+        1. [create procedure updateAlmacen(@id int, @Estado varchar(50), @Descripcion varchar(50)) AS
+        begin 
+            update Almacen
+            set (Estado = @Estado), (Descripcion = @Descripcion)
+            where IdAlmacen = @id
+        end;]
+>>>>>>> 901108b3ba02349ebc8341ccfb7ab547961e3a9c
 
-    2. Los datos que se actualizan son: [los datos]
+        2. Los datos que se actualizan son: [los datos]
 
 
 
