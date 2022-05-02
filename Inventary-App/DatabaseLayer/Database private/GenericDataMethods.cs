@@ -1,15 +1,12 @@
 ﻿using System;
 using System.Data;
 using System.Data.SqlClient;
-using System.Configuration.ConfigurationManager;
 
-namespace DatabaseLayer.
+namespace DatabaseLayer
 {
     public sealed class GenericDataMethods
     {
-        private string databaseConnection = WebConfigurationManager.ConnectionStrings["LibroApp_Database"].ConnectionString;
-
-        
+        //private string databaseConnection = WebConfigurationManager.ConnectionStrings["LibroApp_Database"].ConnectionString;
 
         #region Metodos_CRUD
         public bool Agregar(Authors item)
@@ -83,6 +80,5 @@ namespace DatabaseLayer.
         }
         #endregion
 
-        
     }
 }

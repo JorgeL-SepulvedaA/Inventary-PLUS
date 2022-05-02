@@ -11,5 +11,6 @@ namespace DatabaseLayer.Database_private
         private static readonly string provider = "providerName=" + '"' + "System.Data.SqlClient" + '"';
 
         public static string ConnectionString { get { return connectionString; } }
+
     }
 }

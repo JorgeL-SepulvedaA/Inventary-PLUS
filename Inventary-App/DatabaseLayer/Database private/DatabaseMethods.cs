@@ -6,9 +6,9 @@ using System.Data.SqlClient;
 
 namespace DatabaseLayer.Database_private
 {
-    public sealed class DatabaseMethods
+    public sealed class DatabaseMethods 
     {
-        public static DatabaseMethods Instance { get; set; } = new DatabaseMethods(databaseConnection);
+        public static DatabaseMethods Instance { get; set; } = new DatabaseMethods(DatabaseConfig.ConnectionString);
 
         private SqlConnection Connection { get; set; }
 

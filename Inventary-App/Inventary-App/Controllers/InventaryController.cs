@@ -8,6 +8,8 @@ namespace Inventary_App.Controllers
 {
     public class InventaryController : Controller
     {
+        public static InventaryController Instance { get; set; } = new InventaryController();
+
         public IActionResult Index()
         {
             return View();

@@ -20,7 +20,8 @@ namespace Inventary_App.Controllers
 
         public IActionResult Index()
         {
-            return View();
+            //return View();
+            return RedirectToAction("../InventaryController/Index");
         }
 
         public IActionResult Privacy()
