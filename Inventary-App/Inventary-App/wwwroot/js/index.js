@@ -16,4 +16,5 @@ function dataValidation(e) {
         return;
     }
     swal("Bien hecho", "Usuario creado!", "success");
+    location.replace("/Inventary/Login");
 }

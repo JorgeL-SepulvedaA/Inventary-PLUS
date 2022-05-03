@@ -18,18 +18,18 @@
             </div>
             <div class="mt-4 mb-4 ml-4 mr-4 pt-4">
                 <h5 class="font-weight-bold" for="first-name">Usuario</h5>
-                <input type="text" name="user" id="userName" placeholder="Tu usuario" class="form-control form-control-lg rounded" />
+                <input type="text" name="user" id="userName" placeholder="Tu usuario" class="form-control form-control-lg rounded" required />
             </div>
             <div class="mb-4 ml-4 mr-4">
                 <h5 class="font-weight-bold" for="email">Email</h5>
-                <input type="email" name="email" id="email" placeholder="Your@email.com" class="form-control form-control-lg rounded" />
+                <input type="email" name="email" id="email" placeholder="Your@email.com" class="form-control form-control-lg rounded" required />
             </div>
             <div class="mb-5 ml-4 mr-4">
                 <h5 class="font-weight-bold" for="password">Contraseña</h5>
-                <input type="password" name="password" id="password" placeholder="Tu contraseña" class="form-control form-control-lg rounded" />
+                <input type="password" name="password" id="password" placeholder="Tu contraseña" class="form-control form-control-lg rounded" required />
             </div>
             <div class="mb-3 ml-4 mr-4 pb-2">
-                <input type="submit" value="Register" class="btn btn-primary btn-block btn-lg gradient-custom-4 font-weight-bold text-white rounded-pill" />
+                <input type="submit" value="Register" class="btn btn-primary btn-block btn-lg gradient-custom-4 font-weight-bold text-white rounded-pill" required />
             </div>
             <p class="text-center pb-2 pt-2 text-muted">Have already an account? <a asp-action="LogIn" asp-controller="Inventary">Log In</a></p>
 
